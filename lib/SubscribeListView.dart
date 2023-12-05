@@ -1,46 +1,36 @@
 import 'package:flutter/material.dart';
 
 class SubscribeListView extends StatelessWidget {
-  const SubscribeListView({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: Text(
-            'Subscribed Users',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+@override
+Widget build(BuildContext context) {
+  return Container(
+      padding: EdgeInsets.all(30),
+      color: Colors.teal,
+      child:Column(
+        children: <Widget>[
+          ListView(
+            scrollDirection: Axis.horizontal,
+            children: <Widget>[
+              DecoratedBox(
+                decoration: BoxDecoration(color: Colors.red),
+                child: SizedBox(width: 200, height: 200),
+              ),
+              DecoratedBox(
+                decoration: BoxDecoration(color: Colors.blue),
+                child: SizedBox(width: 200, height: 200),
+              ),
+              DecoratedBox(
+                decoration: BoxDecoration(color: Colors.green),
+                child: SizedBox(width: 200, height: 200),
+              ),
+              DecoratedBox(
+                decoration: BoxDecoration(color: Colors.yellow),
+                child: SizedBox(width: 200, height: 200),
+              ),
+            ],
           ),
-        ),
-        ListView(
-          padding: const EdgeInsets.all(8),
-          scrollDirection: Axis.horizontal,
-          children: const [
-            Padding(
-              child: Text("Tom", style: TextStyle(fontSize: 22)),
-              padding: EdgeInsets.symmetric(horizontal: 15),
-            ),
-            Padding(
-              child: Text("Alice", style: TextStyle(fontSize: 22)),
-              padding: EdgeInsets.symmetric(horizontal: 15),
-            ),
-            Padding(
-              child: Text("Bob", style: TextStyle(fontSize: 22)),
-              padding: EdgeInsets.symmetric(horizontal: 15),
-            ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15),
-              child: Text("Sam", style: TextStyle(fontSize: 22)),
-            ),
-            Padding(
-              child: Text("Kate", style: TextStyle(fontSize: 22)),
-              padding: EdgeInsets.symmetric(horizontal: 15),
-            ),
-          ],
-        ),
-      ],
-    );
-  }
+        ],
+      )
+  );
+}
 }

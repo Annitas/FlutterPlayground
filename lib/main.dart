@@ -22,8 +22,8 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: <Widget>[
             UserView(),
-            // TabBarApp(),
             SubscribeView(),
+            // SubscribeListView(),
             TariffsAndLimitsView(),
             Intrests(),
             IntrestsTagView(),
