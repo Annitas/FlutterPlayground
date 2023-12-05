@@ -5,7 +5,7 @@ class UserView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.all(35),
+        padding: const EdgeInsets.all(25),
         child: Align(
             alignment: Alignment.topCenter,
             child: Column(
@@ -27,7 +27,7 @@ class UserView extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 15),
                   const Text(
                       'Екатерина',
                       textDirection: TextDirection.ltr,
