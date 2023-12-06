@@ -15,14 +15,14 @@ class TextBuilder extends StatelessWidget {
         Text(
             title,
             // textDirection: TextDirection.ltr,
-            style: const TextStyle( fontSize: 24, fontWeight: FontWeight.w600,
+            style: const TextStyle( fontSize: 22, fontWeight: FontWeight.w600,
             )
         ),
         Text(
             subtitle,
             textDirection: TextDirection.ltr,
             style: const TextStyle(
-                fontSize: 20,
+                fontSize: 18,
                 color: Colors.grey
             )
         ),

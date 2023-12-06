@@ -5,7 +5,7 @@ class UserView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.all(25),
+        padding: const EdgeInsets.all(12),
         child: Align(
             alignment: Alignment.topCenter,
             child: Column(
@@ -20,8 +20,8 @@ class UserView extends StatelessWidget {
                         size: Size.fromRadius(48), // Image radius
                         child: const Image(
                             image: AssetImage('assets/images/avatar.jpeg'),
-                            width: 100,
-                            height: 100,
+                            width: 80,
+                            height: 80,
                             fit:BoxFit.cover
                         ),
                       ),
